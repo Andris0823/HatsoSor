@@ -1,0 +1,72 @@
+/* Fejléc */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.admin-title {
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    bottom: 420px;
+    
+    
+}
+
+/* Kijelentkező gomb */
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 800px;
+    bottom: 410px;
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+}
+
+
+#drivers-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 800px;
+    bottom: 800px;    
+}
+
+#drivers-button:hover {
+    background-color: #003366;
+}
+
+
+#routes-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 1000px;
+    bottom: 800px;    
+}
+
+#routes-button:hover {
+    background-color: #003366;
+}
