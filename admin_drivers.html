@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofőrök - Hátsó Sor KFT.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin_drivers.css">
+    <link rel="icon" href="kicsikocsi.png">
+</head>
+<body>
+    <header class="admin-header">
+        <h1 class="admin-title">Sofőrök</h1>
+        <button class="logout-button" id="logout-button">Kijelentkezés</button>
+        <button class="drivers-add">Új sofőr</button>
+        <button class="back-to-main" id="back-to-main">Vissza a fő oldalra</button>
+    </header>
+    <main class="admin-main">
+        <table class="driver-table">
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Email</th>
+                    <th>Telefonszám</th>
+                    <th>Műveletek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Teszt Elek</td>
+                    <td>teszt.elek@hatsosor.com</td>
+                    <td>06201234567</td>
+                    <td>
+                        <button class="edit-button">Szerkesztés</button>
+                        <button class="delete-button">Törlés</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script>
+    document.getElementById("back-to-main").addEventListener("click", function () {
+    window.location.href = "admin.html";
+});
+    </script>
+    <script src="kijelentkezes.js"></script>
+</body>
+</html>
