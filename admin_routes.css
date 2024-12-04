@@ -1,5 +1,5 @@
 /* Táblázat stílus */
-.driver-table {
+.routes-table {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
@@ -8,23 +8,23 @@
     text-align: center;
 }
 
-.driver-table th,
-.driver-table td {
+.routes-table th,
+.routes-table td {
     padding: 10px 80px;
     border: 1px solid #ddd;
 }
 
-.driver-table th {
+.routes-table th {
     background-color: #004080;
     color: white;
 }
 
-.driver-table tr:nth-child(even) {
+.routes-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
 
-.admin-drivers-edit-button, .admin-drivers-delete-button {
+.admin-routes-edit-button, .admin-routes-delete-button {
     background-color: #004080;
     color: white;
     border: none;
@@ -35,15 +35,15 @@
     margin-right: 5px;
 }
 
-.admin-drivers-delete-button {
+.admin-routes-delete-button {
     background-color: #ff4d4d;
 }
 
-.admin-drivers-edit-button:hover {
+.admin-routes-edit-button:hover {
     background-color: #003366;
 }
 
-.admin-drivers-delete-button:hover {
+.admin-routes-delete-button:hover {
     background-color: #cc0000;
 }
 
@@ -52,7 +52,7 @@
     text-align: center;
     position: relative;
     bottom: 400px;
-    left: 650px;
+    left: 780px;
     color: white;
     
 }
@@ -74,7 +74,7 @@
     background-color: #cc0000;
 }
 
-.drivers-add {
+.routes-add {
     background-color: lightgreen;
     border: none;
     padding: 10px 15px;
@@ -86,7 +86,7 @@
     bottom: 850px;
 }
 
-.drivers-add:hover {
+.routes-add:hover {
     background-color: forestgreen;
 }
 
