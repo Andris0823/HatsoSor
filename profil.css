@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-.admin-header {
+.profil-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
