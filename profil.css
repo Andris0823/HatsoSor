@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-.admin-title {
+.profil-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
@@ -33,10 +33,43 @@ body {
     padding-left: 840px;
 }
 
-.admin-buttons {
+.profil-buttons {
     display: flex;
     gap: 15px;
 }
+.mainpage-button, .logout-button {
+    background: linear-gradient(135deg, #38a169, #2f855a);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mainpage-button:hover {
+      background: linear-gradient(135deg, #2f855a, #276749);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.mainpage-button{
+    position: absolute;
+    left: 20px;
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .main-content {
     padding: 40px;
     max-width: 1200px;
@@ -64,7 +97,7 @@ body {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.driver-table {
+.profile-table {
     width: 100%;
     border-collapse: collapse;
     overflow: hidden;
@@ -74,7 +107,7 @@ body {
     margin-bottom: 10px;
 }
 
-.driver-table thead {
+.profile-table thead {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     font-size: 1rem;
@@ -84,7 +117,7 @@ body {
 
 }
 
-.driver-table th, .driver-table td {
+.profile-table th, .profile-table td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -93,11 +126,11 @@ body {
     white-space: nowrap;
 }
 
-.driver-table tr:nth-child(even) {
+.profile-table tr:nth-child(even) {
     background-color: lightgray;
 }
 
-.driver-table tr:hover {
+.profile-table tr:hover {
     background-color: #eef5ff;
     transition: background-color 0.3s ease;
 }
