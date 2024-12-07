@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #74ebd5, #acb6e5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.admin-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 1;
+    text-align: center;
+}
+
+.logout-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-container {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.table-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.driver-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.driver-table thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.driver-table th, .driver-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.driver-table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.driver-table tr:hover {
+    background-color: #eef5ff;
+    transition: background-color 0.3s ease;
+}
+
+.admin-drivers-edit-button, .admin-drivers-delete-button {
+    background: linear-gradient(135deg, #4a90e2, #0073e6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-drivers-delete-button {
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.admin-drivers-edit-button:hover {
+    background: linear-gradient(135deg, #3b78d4, #0056b3);
+    transform: scale(1.05);
+}
+
+.admin-drivers-delete-button:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: scale(1.05);
+}
+
+.drivers-add, .back-to-main {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(135deg, #38a169, #2f855a);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drivers-add:hover {
+    background: linear-gradient(135deg, #2f855a, #276749);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-main {
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.back-to-main:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hátsó Sor KFT. - Bejelentkezés</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kicsikocsi.png">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Hátsó Sor KFT.</h1>
+        <form id="login-form">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Felhasználónév" required>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Jelszó" required>
+            </div>
+            <button type="submit" class="login-button" id="login-button">Bejelentkezés</button>
+        </form>
+        <p id="error-message" class="error-message" style="display: none;">Hibás felhasználónév vagy jelszó!</p>
+        <a href=forgot_pw.html class="forgot-password" id="forgot-pw-button">Jelszó emlékeztető</a>
+    </div>
+    <script src="alap.js"></script>
+</body>
+</html>

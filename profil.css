@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #74ebd5, #acb6e5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0066cc, #003366);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #0056b3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.profil-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    padding-left: 840px;
+}
+
+.profil-buttons {
+    display: flex;
+    gap: 15px;
+}
+.mainpage-button, .logout-button {
+    background: linear-gradient(135deg, #38a169, #2f855a);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mainpage-button:hover {
+      background: linear-gradient(135deg, #2f855a, #276749);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.mainpage-button{
+    position: absolute;
+    left: 20px;
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.table-container {
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+
+}
+
+.table-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+.profile-table thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.profile-table th, .profile-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.profile-table tr:hover {
+    background-color: #eef5ff;
+    transition: background-color 0.3s ease;
+}
+.edit-button, .delete-button {
+    background: linear-gradient(135deg, #4a90e2, #0073e6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+    background: linear-gradient(135deg, #e63946, #d62828);
+}
+
+.edit-button:hover {
+    background: linear-gradient(135deg, #3b78d4, #0056b3);
+    transform: scale(1.05);
+}
+
+.delete-button:hover {
+    background: linear-gradient(135deg, #d62828, #b71c1c);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
