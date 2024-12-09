@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofőr Oldal</title>
+    <link rel="stylesheet" href="sofor.css">
+    <link rel="icon" href="kicsikocsi.png">
+</head>
+<body>
+    <header class="admin-header">
+        <h1 class="admin-title">Sofőr Panel</h1>
+        <div class="admin-buttons">
+            <button class="my-trips-button" id="my-trips-button">Fuvarjaim</button>
+            <button class="profile-button" id="profile-button">Profil</button>
+            <button class="logout-button" id="logout-button">Kijelentkezés</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="table-container">
+            <h2 class="table-title">Legutóbbi Fuvarok</h2>
+            <table class="driver-table">
+                <thead>
+                    <tr>
+                        <th>Dátum</th>
+                        <th>Útvonal</th>
+                        <th>Távolság (km)</th>
+                        <th>Időtartam</th>
+                        <th>Státusz</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024. 12. 02.</td>
+                        <td>Budapest - Debrecen</td>
+                        <td>260 km</td>
+                        <td>3 óra 15 perc</td>
+                        <td>Teljesített</td>
+                    </tr>
+                    <tr>
+                        <td>2024. 12. 07.</td>
+                        <td>Debrecen - Budapest</td>
+                        <td>272 km</td>
+                        <td>3 óra 36 perc</td>
+                        <td>Teljesített</td>
+                    </tr>
+                    <tr>
+                        <td>2024. 12. 10.</td>
+                        <td>Budapest - Pécs</td>
+                        <td>236 km</td>
+                        <td>2 óra 41 perc</td>
+                        <td>Teljesített</td>
+                    </tr>
+                    <tr>
+                        <td>2024. 12. 12.</td>
+                        <td>Pécs - Szeged</td>
+                        <td>172 km</td>
+                        <td>3 óra 02 perc</td>
+                        <td>Teljesített</td>
+                    </tr>
+                    <tr>
+                        <td>2024. 12. 13.</td>
+                        <td>Szeged - Budapest</td>
+                        <td></td>
+                        <td></td>
+                        <td>Aktív</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="kijelentkezes.js"></script>
+    <script src="fuvarjaim.js"></script>
+    <script src="profil.js"></script>
+</body>
+</html>
