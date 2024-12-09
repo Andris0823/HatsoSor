@@ -1,8 +1,9 @@
-# Projektmunka segítség
+# Projektmunka segítség elkezdéshez
 
 ### Szükséges programok:
 1. Java
 2. Node.js
+3. Maven
 
 ### Alkalmazás elindításának lépései:
 
