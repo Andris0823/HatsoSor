@@ -1,0 +1,11 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+    //background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  .mainContent {
+      position: sticky;
+    top: 100px;
+    margin-top: 2rem;
+  }
